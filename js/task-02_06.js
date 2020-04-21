@@ -11,18 +11,18 @@ const numberInput = function () {
     if (isNaN(numberValue)) {
       message = "Вы ввели не число";
 
-      console.log(message);
+      alert(message);
 
       break;
     } else {
       numbers.push(numberValue);
-      for (let i = 0; index < numbers.length; i += 1) {
-        total += numbers[i];
-      }
     }
-    total += numberValue;
-    return total;
+  }
+  for (let i = 0; i < numbers.length; i += 1) {
+    total += numbers[i];
   }
 
   console.log(`Общая сумма равна ${total}`);
+  return total;
 };
+numberInput();
